@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        h5 {
+            font-size: 11px;
+        }
+
+
+        .bor {
+            border: 1px solid black;
+            border-collapse: collapse;
+            font-size: 11px;
+        }
+
+        td {
+            padding: 5px !important;
+        }
+
+        .table tbody tr td {
+            padding: 5px !important;
+        }
+
+        .table tbody tr td {
+            font-size: 11px;
+        }
+
+        th {
+            background-color: #e0e0e0;
+            color: #000;
+            padding: 5px !important;
+        }
+
+        h4 {
+            font-size: 11px;
+        }
+
+        h5 {
+            font-size: 11px;
+        }
+
+        * {
+            font-family: 'Open Sans', sans-serif !important;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="row">
+        <table style="width:100%;">
+            <tr>
+                <td style="width:100%"><div class="col-md-6" style="width:100%!important;">
+    <div style="padding-bottom:10px">
+        <img src="https://cdn.schoolcare.in/Cloud/cdnsch/27/School/Santjaleshwarlogoheader.png" style="margin:auto!important;width:100%;padding:0px 30px" />
+    </div>
+    <p style="text-align:center;margin-bottom:5px;text-align:center;border-top:1px solid black;    margin: 0px 13px;"><u><b>Office Copy</b></u></p>
+    <div class="row" style="margin-top:5px!important;">
+        <div class="col-md-7" style="width:40%;    display: inline-block;">
+            <h5 style="margin-top:3px;
+margin-bottom:3px;">
+                <span style="margin-left:15px!important;font-size: 14px;"><b>R. No: ##PAYMANTNO##</b></span>
+            </h5>
+            <h5 style="margin-top:0px;
+margin-bottom:3px;">
+                <span style="margin-left:15px!important;text-transform:uppercase!important;font-size: 14px;"><b>Name: ##STUDENT_FULLNAME##</b></span>
+            </h5>
+            <h5 style="margin-top:0px;
+margin-bottom:3px;">
+                <span style="        margin-left: 15px !important;
+        text-transform: uppercase!important;font-size: 14px;"><b>F. Name: ##FNAME##</b></span>
+            </h5>
+            <h5 style="margin-top:0px;
+margin-bottom:3px;">
+                <span style="margin-left:15px!important;font-size: 14px;"><b>Adm.No / Roll No: ##STUDENT_CODE## / ##CLASSROLLNO##</b></span>
+            </h5>
+            <h5 style="margin-top:0px;
+margin-bottom:3px;">
+                <span style="margin-left:15px!important;font-size: 14px;"><b>Class: ##STUDNT_CLASS_NAME## (##SECTION##)</b></span>
+            </h5>
+        </div>
+        <div class="col-md-5" style="width:30%;float:right;    display: inline-block;">
+            <h5 style="margin-top:3px;
+margin-bottom:3px;">
+                <span style="text-transform:capitalize;font-size: 14px;"><b>Session :   ##STUDENT_ACADMIC_YEAR## </b></span>
+            </h5>
+            <h5 style="margin-top:3px;
+margin-bottom:3px;">
+                <span style="font-size: 14px;"><b>Date: ##PAIDDATE##</b></span>
+            </h5>
+            <h5 style="margin-top:3px;
+margin-bottom:3px;">
+                <span style="font-size: 14px;"><b>Time: ##TIME##</b></span>
+            </h5>
+            <h5 style="margin-top:3px;
+margin-bottom:3px;">
+                <span style="text-transform:uppercase!important;font-size: 14px;"><b>Mob. No: ##MOBILE##</b></span>
+            </h5>
+            <h5 style="margin-top:3px;
+margin-bottom:3px;">
+                <span style="text-transform:uppercase!important;font-size: 14px;"><b>User: <span style="font-size:14PX;">##USER##</span></b></span>
+            </h5>
+
+        </div>
+    </div>
+
+
+
+
+
+
+    <div style="text-align:center;    margin-left: 15px;
+    margin-right: 15px;">
+        <table class="bor" style="width:100%;text-align:center;margin-top:4px;">
+            <thead>
+                <tr>
+                    <th style="text-align:center;" class="bor">Sr No.</th>
+                    <th style="text-align:center;" class="bor">PARTICULARS</th>
+                    <th style="text-align:center;" class="bor" colspan="2">AMOUNT </th>
+
+                </tr>
+            </thead>
+            <tbody style="font-size:13px;">
+
+
+                <b>##DEMAND_HEAD_DETAIL##</b>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <td style="text-align:center;" class="bor"></td>
+                    <td style="text-align:center;" class="bor"><b>Total Paid Amount</b></td>
+                    <td style="text-align:center;font-weight:bold;" class="bor" colspan="2"><b>##TOTAL_RUPEE##</b></td>
+
+                </tr>
+
+            </tfoot>
+        </table>
+        <table class="bor" style="width:100%;text-align:center;margin-top:10px;">
+            <thead>
+                <tr>
+                    <th style="text-align:center;background:none;    font-size: 12px;" class="bor">Due </th>
+                    <th style="text-align:center;background:none;    font-size: 12px;text-transform: capitalize;" class="bor"> ##DUES##</th>
+                    <th style="text-align:center;background:none;    font-size: 12px;" class="bor"><span>Total Amount : </span>##DUESAMT##</th>
+                </tr>
+            </thead>
+
+
+        </table>
+        <table class="bor" style="width:100%;text-align:center;margin-top:10px;">
+            <thead>
+                <tr>
+                    <th style="text-align:center;padding: 3px !important;" class="bor">Payment Method</th>
+                    <th style="text-align:center;padding: 3px !important;" class="bor">Amount</th>
+                </tr>
+            </thead>
+            <tbody style="font-weight:bold;">##DEMAND_Payment_Summary##</tbody>
+
+        </table>
+
+
+        <table class="bor" style="width:100%;text-align:center;margin-top:10px;">
+
+            <tbody style="font-weight:bold;">##DEMAND_Payment_RemarksList##</tbody>
+
+        </table>
+        <h4 style="margin:4px 0px 0px 0px;color:black;text-align:left;">
+            Note :-
+            <!--<span style="float:left;font-weight:500!important;    font-size: 12px;margin-top:3px;"><b>Note:</b> </span>
+
+
+            <span style="float:right;margin-top:0px;font-weight:500!important;margin-top:20px;    font-size: 11px;">Signature.........................................</span>-->
+
+        </h4>
+        <ul style="font-weight:500!important;    font-size: 12px;margin-top:3px;width:100%;text-align:left;    margin-left: -23px;margin-bottom:0px;">
+            <li>
+                If any correction, please consult to fee counter.
+            </li>
+            <li>
+                All above mentioned amount once paid are non refundable in any case whatsoever.
+            </li>
+  </ul>
+        <h4 style="margin:0px 0px 0px 0px;color:black;text-align:left;">
+
+
+
+            <span style="float:right;margin-top:0px;font-weight:500!important;margin-top:20px;    font-size: 11px;">Signature: ##USER##</span>
+
+        </h4>
+    </div>
+</div></td>
+               
+            
+            </table>
+             <hr style="border: 1px solid #000; margin: 20px 0;">
+            
+            
+    </div>
+    <div class="row">
+        <table style="width:100%;">
+            <tr>
+                <td style="width:100%"><div class="col-md-6" style="width:100%!important;">
+    <div style="padding-bottom:10px">
+        <img src="https://cdn.schoolcare.in/Cloud/cdnsch/27/School/Santjaleshwarlogoheader.png" style="margin:auto!important;width:100%;padding:0px 30px" />
+    </div>
+    <p style="text-align:center;margin-bottom:5px;text-align:center;border-top:1px solid black;    margin: 0px 13px;"><u><b>Student Copy</b></u></p>
+    <div class="row" style="margin-top:5px!important;">
+        <div class="col-md-7" style="width:40%;    display: inline-block;">
+            <h5 style="margin-top:3px;
+margin-bottom:3px;">
+                <span style="margin-left:15px!important;font-size: 14px;"><b>R. No: ##PAYMANTNO##</b></span>
+            </h5>
+            <h5 style="margin-top:0px;
+margin-bottom:3px;">
+                <span style="margin-left:15px!important;text-transform:uppercase!important;font-size: 14px;"><b>Name: ##STUDENT_FULLNAME##</b></span>
+            </h5>
+            <h5 style="margin-top:0px;
+margin-bottom:3px;">
+                <span style="        margin-left: 15px !important;
+        text-transform: uppercase!important;font-size: 14px;"><b>F. Name: ##FNAME##</b></span>
+            </h5>
+            <h5 style="margin-top:0px;
+margin-bottom:3px;">
+                <span style="margin-left:15px!important;font-size: 14px;"><b>Adm.No / Roll No: ##STUDENT_CODE## / ##CLASSROLLNO##</b></span>
+            </h5>
+            <h5 style="margin-top:0px;
+margin-bottom:3px;">
+                <span style="margin-left:15px!important;font-size: 14px;"><b>Class: ##STUDNT_CLASS_NAME## (##SECTION##)</b></span>
+            </h5>
+        </div>
+        <div class="col-md-5" style="width:30%;float:right;    display: inline-block;">
+            <h5 style="margin-top:3px;
+margin-bottom:3px;">
+                <span style="text-transform:capitalize;font-size: 14px;"><b>Session :   ##STUDENT_ACADMIC_YEAR## </b></span>
+            </h5>
+            <h5 style="margin-top:3px;
+margin-bottom:3px;">
+                <span style="font-size: 14px;"><b>Date: ##PAIDDATE##</b></span>
+            </h5>
+            <h5 style="margin-top:3px;
+margin-bottom:3px;">
+                <span style="font-size: 14px;"><b>Time: ##TIME##</b></span>
+            </h5>
+            <h5 style="margin-top:3px;
+margin-bottom:3px;">
+                <span style="text-transform:uppercase!important;font-size: 14px;"><b>Mob. No: ##MOBILE##</b></span>
+            </h5>
+            <h5 style="margin-top:3px;
+margin-bottom:3px;">
+                <span style="text-transform:uppercase!important;font-size: 14px;"><b>User: <span style="font-size:14PX;">##USER##</span></b></span>
+            </h5>
+
+        </div>
+    </div>
+
+
+
+
+
+
+    <div style="text-align:center;    margin-left: 15px;
+    margin-right: 15px;">
+        <table class="bor" style="width:100%;text-align:center;margin-top:4px;">
+            <thead>
+                <tr>
+                    <th style="text-align:center;" class="bor">Sr No.</th>
+                    <th style="text-align:center;" class="bor">PARTICULARS</th>
+                    <th style="text-align:center;" class="bor" colspan="2">AMOUNT </th>
+
+                </tr>
+            </thead>
+            <tbody style="font-size:13px;">
+
+
+                <b>##DEMAND_HEAD_DETAIL##</b>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <td style="text-align:center;" class="bor"></td>
+                    <td style="text-align:center;" class="bor"><b>Total Paid Amount</b></td>
+                    <td style="text-align:center;font-weight:bold;" class="bor" colspan="2"><b>##TOTAL_RUPEE##</b></td>
+
+                </tr>
+
+            </tfoot>
+        </table>
+        <table class="bor" style="width:100%;text-align:center;margin-top:10px;">
+            <thead>
+                <tr>
+                    <th style="text-align:center;background:none;    font-size: 12px;" class="bor">Due </th>
+                    <th style="text-align:center;background:none;    font-size: 12px;text-transform: capitalize;" class="bor"> ##DUES##</th>
+                    <th style="text-align:center;background:none;    font-size: 12px;" class="bor"><span>Total Amount : </span>##DUESAMT##</th>
+                </tr>
+            </thead>
+
+
+        </table>
+        <table class="bor" style="width:100%;text-align:center;margin-top:10px;">
+            <thead>
+                <tr>
+                    <th style="text-align:center;padding: 3px !important;" class="bor">Payment Method</th>
+                    <th style="text-align:center;padding: 3px !important;" class="bor">Amount</th>
+                </tr>
+            </thead>
+            <tbody style="font-weight:bold;">##DEMAND_Payment_Summary##</tbody>
+
+        </table>
+
+
+        <table class="bor" style="width:100%;text-align:center;margin-top:10px;">
+
+            <tbody style="font-weight:bold;">##DEMAND_Payment_RemarksList##</tbody>
+
+        </table>
+        <h4 style="margin:4px 0px 0px 0px;color:black;text-align:left;">
+            Note :-
+            <!--<span style="float:left;font-weight:500!important;    font-size: 12px;margin-top:3px;"><b>Note:</b> </span>
+
+
+            <span style="float:right;margin-top:0px;font-weight:500!important;margin-top:20px;    font-size: 11px;">Signature.........................................</span>-->
+
+        </h4>
+        <ul style="font-weight:500!important;    font-size: 12px;margin-top:3px;width:100%;text-align:left;    margin-left: -23px;margin-bottom:0px;">
+            <li>
+                If any correction, please consult to fee counter.
+            </li>
+            <li>
+                All above mentioned amount once paid are non refundable in any case whatsoever.
+            </li>
+  </ul>
+        <h4 style="margin:0px 0px 0px 0px;color:black;text-align:left;">
+
+
+
+            <span style="float:right;margin-top:0px;font-weight:500!important;margin-top:20px;    font-size: 11px;">Signature: ##USER##</span>
+
+        </h4>
+    </div>
+</div></td>
+               
+            
+            </table>
+            
+            
+    </div>
+</body>
+</html>
+
